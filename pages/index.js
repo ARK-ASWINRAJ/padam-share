@@ -14,7 +14,7 @@ export default function Home() {
           Padam Share
         </h1>
         <p className="text-4xl mx-auto max-w-[400px] mt-8 font-semibold font-extralight">
-          Your pics Handpicked
+          Your Pics Handpicked
         </p>
       </div>
       <div className="mt-16 ">
