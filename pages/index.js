@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,10 +19,12 @@ export default function Home() {
         </p>
       </div>
       <div className="mt-16 ">
-        <div className="flex max-w-[500px] mx-auto w-full justify-between ">
-          <button className=" text-xl border-2 rounded  text-white bg-gradient-to-r from-fuchsia-600 to-pink-600 px-4 py-2 mb-4 hover:shadow-lg w-[200px] h-[80px] font-semibold">
-            {"Get Pics"}
-          </button>
+        <div className="flex flex-col max-w-[500px] mx-auto w-full justify-around md:flex-row items-center">
+          <Link href="/getpic">
+            <button className=" text-xl border-2 rounded  text-white bg-gradient-to-r from-fuchsia-600 to-pink-600 px-4 py-2 mb-4 hover:shadow-lg w-[200px] h-[80px] font-semibold">
+              {"Get Pics"}
+            </button>
+          </Link>
           <button className=" text-xl border-2 rounded  text-white bg-gradient-to-r from-fuchsia-600 to-pink-600 px-4 py-2 mb-4 hover:shadow-lg w-[200px] h-[80px] font-semibold">
             {"Upload Pics"}
           </button>
