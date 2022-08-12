@@ -8,6 +8,8 @@ const Form = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(`Thank you ${name} for using PadamShare`);
+    setName("");
+    setName("");
   };
   return (
     <div className="items-center my-16 mx-auto border drop-shadow-lg p-8 ">
@@ -31,7 +33,7 @@ const Form = () => {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="mt-4 block w-full px-3 py-2 w-[500px] bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+            className="mt-4 block w-full px-3 py-2 md:w-[500px] w-[300px] bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
       focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
       invalid:border-pink-500 invalid:text-pink-600
@@ -46,7 +48,7 @@ const Form = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="mt-4 block w-full px-3 py-2 w-[500px] bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+            className="mt-4 block w-full px-3 py-2 md:w-[500px] w-[300px] bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
       focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
       invalid:border-pink-500 invalid:text-pink-600
@@ -61,7 +63,7 @@ const Form = () => {
           </span>
           <input
             type="file"
-            className="mt-4 block w-[500px] text-sm text-slate-600
+            className="mt-4 block md:w-[500px] w-[300px] text-sm text-slate-600
       file:mr-4 file:py-2 file:px-4
       file:rounded-full file:border file:border-violet-500
       file:text-sm file:font-semibold

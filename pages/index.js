@@ -25,9 +25,11 @@ export default function Home() {
               {"Get Pics"}
             </button>
           </Link>
-          <button className=" text-xl border-2 rounded  text-white bg-gradient-to-r from-fuchsia-600 to-pink-600 px-4 py-2 mb-4 hover:shadow-lg w-[200px] h-[80px] font-semibold">
-            {"Upload Pics"}
-          </button>
+          <Link href="/event">
+            <button className=" text-xl border-2 rounded  text-white bg-gradient-to-r from-fuchsia-600 to-pink-600 px-4 py-2 mb-4 hover:shadow-lg w-[200px] h-[80px] font-semibold">
+              {"Upload Pics"}
+            </button>
+          </Link>
         </div>
       </div>
     </>
