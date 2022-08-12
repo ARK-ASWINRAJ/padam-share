@@ -9,7 +9,7 @@ const Form = () => {
     event.preventDefault();
     alert(`Thank you ${name} for using PadamShare`);
     setName("");
-    setName("");
+    setEmail("");
   };
   return (
     <div className="items-center my-16 mx-auto border drop-shadow-lg p-8 ">
